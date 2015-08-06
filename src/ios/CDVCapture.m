@@ -711,7 +711,7 @@
     } while ([fileMgr fileExistsAtPath:filePath]);
 
     NSURL* fileURL = [NSURL fileURLWithPath:filePath isDirectory:NO];
-    self.recorder = NSDictionary *recordSettings = [NSDictionary dictionaryWithObjectsAndKeys:
+    NSDictionary *recordSettings = [NSDictionary dictionaryWithObjectsAndKeys:
                                     [NSNumber numberWithInt: kAudioFormatMPEG4AAC], AVFormatIDKey,
                                     [NSNumber numberWithFloat:16000.0], AVSampleRateKey,
                                     [NSNumber numberWithInt: 1], AVNumberOfChannelsKey,
